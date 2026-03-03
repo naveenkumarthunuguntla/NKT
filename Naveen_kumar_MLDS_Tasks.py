@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 #Even or odd
 num = int(input("Enter a number:"))
 if num & 1 == 0:
@@ -11,20 +5,12 @@ if num & 1 == 0:
 else:
     print("Odd")
 
-
-# In[5]:
-
-
 #checking Vote Eligible
 age = int(input("Enter your Age:"))
 if age >=18:
     print("Your are Eligible to Vote.")
 else:
     print("Your are not Eligible to Vote")
-
-
-# In[8]:
-
 
 #Positive, Negative, or Zero
 number = int(input("Enter a Number:"))
@@ -35,20 +21,12 @@ elif number < 0:
 else:
     print("zero")
 
-
-# In[11]:
-
-
 #leap year checker
 year = int(input("Enter a Year:"))
 if year%400 == 0 or year%4 == 0 and year%100 != 0:
     print("Given Number is leap year")
 else:
     print("Given Number is not a leap year")
-
-
-# In[13]:
-
 
 #Maximum of two numbers
 num1 = int(input("Enter a first number:"))
@@ -59,10 +37,6 @@ elif num2 > num1:
     print(f"{num2} is highest Number")
 else:
     print("Both are same")
-
-
-# In[15]:
-
 
 #Grade Calculator
 marks = int(input("Enter your marks:"))
@@ -77,10 +51,6 @@ elif marks>=60:
 else:
     print("Grade:F")
 
-
-# In[18]:
-
-
 #Character Type
 letter = input("Enter a letter between (a-z):").lower()
 Vowels = 'aeiou'
@@ -89,20 +59,12 @@ if letter in Vowels:
 else:
     print("Given letter is a Consonant")
 
-
-# In[27]:
-
-
 #Divisible by Both
 num = int(input("Enter a number:"))
 if num%3==0 & num%5==0:
     print("Given Number is divisible by both 3 and 5")
 else:
     print("Given Number is not divisible by both 3 and 5")
-
-
-# In[20]:
-
 
 #Day of Week
 day_num = int(input("Enter a Number between (1-7):"))
@@ -123,10 +85,6 @@ elif day_num == 7:
 else:
     print("Invalid number")
 
-
-# In[31]:
-
-
 #Simple Calculator
 num1 = int(input("Enter first number:"))
 num2 = int(input("Enter second number:"))
@@ -145,10 +103,6 @@ elif operator == '/':
 else:
     print("Invalid values")
 
-
-# In[1]:
-
-
 #Triangle Type
 s1 = float(input("Enter side1:"))
 s2 = float(input("Enter side2:"))
@@ -164,10 +118,6 @@ if s1+s2>s3 and s2+s3>s1 and s3+s1>s2:
 else:
     print("Invalid Triangle")
 
-
-# In[2]:
-
-
 #Electricity Bill Calculator
 units = int(input("Enter units:"))
 bill = 0
@@ -181,9 +131,6 @@ else:
 print(f"{units} units of Amount is Rs/-{bill}")
 
 
-# In[3]:
-
-
 #ATM Withdrawal
 amount_withdrawal = int(input("Enter amount to withdraw:"))
 balance = 5000
@@ -195,10 +142,6 @@ elif amount_withdrawal > balance-500:
 else:
     balance -= amount_withdrawal
     print(f"Total Balance:{balance}")
-
-
-# In[4]:
-
 
 #Discount Calculator
 amount = float(input("Enter purchase amount:"))
@@ -214,10 +157,6 @@ elif amount > 2000:
 else:
     print(f"Discount: 0% final Bill:{final_bill}")
 
-
-# In[5]:
-
-
 #BMI Calculator
 weight = float(input("Enter your weight in kg:"))
 height = float(input("Enter your height in meters:"))
@@ -232,18 +171,10 @@ elif BMI < 25:
 else:
      print("Category:obese")
 
-
-# In[6]:
-
-
 #Multiplication Table
 number = int(input("Enter a number:"))
 for i in range(1,11):
     print(f"{number}x{i}={number*i}")
-
-
-# In[8]:
-
 
 #Sum of Natural Numbers
 number = int(input("Enter a number:"))
@@ -252,20 +183,12 @@ for i in range(number+1):
     sum += i
 print(f"Sum first {number} Natural numbers:{sum}")
 
-
-# In[11]:
-
-
 #factorial Calculator
 number = int(input("Enter a number:"))
 fact = 1
 for i in range(1,number+1):
     fact *= i
 print(f"factorial of {number} is {fact}")
-
-
-# In[13]:
-
 
 #Count Digits
 num = int(input("Enter a number:"))
@@ -274,10 +197,6 @@ for i in str(num):
     count += 1
 print(f"Given number {num} in total digits {count}")
 
-
-# In[15]:
-
-
 #print Pattern
 n = 5
 for i in range(n+1):
@@ -285,20 +204,12 @@ for i in range(n+1):
         print("*",end="")
     print()
 
-
-# In[18]:
-
-
 #Sum of Even Numbers
 sum = 0
 for i in range(1,101):
     if i%2 == 0:
         sum +=i
 print(f"Sum of Even Numbers from 1 to 100:{sum}")
-
-
-# In[19]:
-
 
 #Prime Number Check
 num = int(input("Enter a number:"))
@@ -311,10 +222,6 @@ else:
             break
     else:
         print("prime")
-
-
-# In[ ]:
-
 
 #Guess the Number
 import random
@@ -331,10 +238,6 @@ while True:
     else:
         print("Too high! Try again")
 
-
-# In[ ]:
-
-
 #Sum Until Zero
 total = 0
 num = int(input("Enter a number (0 to stop):"))
@@ -343,10 +246,6 @@ while num!=0:
     num = int(input("Enter another number(0 to stop):"))
 
 print(f"su of all numbers:{total}")
-
-
-# In[ ]:
-
 
 #Reverse a Number
 num  = int(input("Enter a number:"))
@@ -359,20 +258,12 @@ while num > 0:
 
 print(reverse)
 
-
-# In[ ]:
-
-
 #Countdown Timer
 count = 10
 while count>0:
     print(count)
     count -=1
 print("Blast off")
-
-
-# In[ ]:
-
 
 #Armstrong Number
 num = int(input("Enter a number:"))
@@ -388,19 +279,11 @@ if orginal == armstrong:
 else:
     print("Given number is not Armstrong")
 
-
-# In[ ]:
-
-
 #Find first Multiple
 for i in range(1,100):
     if i%7==0:
         print(f"first Number divisible by 7 is:{i}")
         break
-
-
-# In[ ]:
-
 
 #skip Multiples of 3
 for i in range(1,20):
@@ -408,10 +291,6 @@ for i in range(1,20):
         continue
     else:
         print(i)
-
-
-# In[ ]:
-
 
 #Menu-Driven Program
 while True:
@@ -437,10 +316,6 @@ while True:
     else:
         print("Invalid choice!")
 
-
-# In[2]:
-
-
 #Simple Calculator with Match
 num1 = int(input("Enter first number:"))
 num2 = int(input("Enter second number:"))
@@ -461,10 +336,6 @@ match operator:
     case '_':
         print("Invalid operator")
 
-
-# In[3]:
-
-
 #HTTP Status Codes
 code = int(input("Enter the Code:"))
 
@@ -479,10 +350,6 @@ match code:
         print("Unauthorized")
     case _:
         print("Unknow code Enter")
-
-
-# In[5]:
-
 
 #Shape Area Calculator
 shape = input("Enter the shape(circle,square,rectangle):")
@@ -503,20 +370,12 @@ match shape:
     case '':
         print("Invalid shape")
 
-
-# In[9]:
-
-
 #Number Pyramid
 n=5
 for i in range(n+1):
     for j in range(i):
         print(i,end =' ')
     print()
-
-
-# In[10]:
-
 
 #Fibonacci series
 n = int(input("Enter a number:"))
@@ -528,10 +387,6 @@ while count<n:
     f2 = f3
     count += 1
     print(f1)
-
-
-# In[11]:
-
 
 #Palindrome Checker
 text = input("Enter a string:").lower()
@@ -545,10 +400,6 @@ if reverse == orginal:
 else:
     print(f"Given text {text} is not a Palindrome")
 
-
-# In[12]:
-
-
 #Pattern with Break
 num = int(input("Enter a number:"))
 for i in range(1,11):
@@ -557,10 +408,6 @@ for i in range(1,11):
         break
     else:
         print(i)
-
-
-# In[13]:
-
 
 #Valid password checker
 password = input("Enter a Password:")
@@ -584,10 +431,6 @@ else:
         if not has_special:
             print("Password must contain at least one special character")
 
-
-# In[14]:
-
-
 #Number Guessing with Hint
 import random
 secret = random.randint(1,50)
@@ -609,11 +452,6 @@ while attempts<max_attempts:
         print(f"Too low! Attempts left:{max_attempts-attempts}")
 else:
     print(f"Game over! The number was {secret}")
-        
-
-
-# In[15]:
-
 
 #Rock Paper Scissors
 import random
@@ -636,10 +474,6 @@ else:
             print("You win! Scissors cut paper")
         case _:
             print(f"You lose!{computer} beats {user}")
-
-
-# In[16]:
-
 
 #Combine Everything into one program
 def main():
@@ -745,10 +579,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-
-
-# In[ ]:
 
 
 
